@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header JavaScript</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <main class="container">
+        <header class="nav">
+            <div class="links">
+                <span class="link-logo"><i class='bx bxs-car'></i></span>
+                <a class="link" href="#">Shop</a>
+                <a class="link" href="#">Sell/Trade</a>
+                <a class="link" href="#">Finance</a>
+                <a class="link" href="#" id="more">More <i class='arrow-down bx bxs-down-arrow'></i></a>
+                <div class="link-dropdown" id="link-dropdown">
+                    <ul class="list">
+                        <li class="link-item">Item 1</li>
+                        <li class="link-item">Item 2</li>
+                        <li class="link-item">Item 3</li>
+                        <li class="link-item">Item 4</li>
+                        <li class="link-item">Item 5</li>
+                        <li class="link-item">Item 6</li>
+                        <li class="link-item">Item 7</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="icons">
+                <div class="location" id="location">
+                    <span class="icon-loc"><i class='bx bxs-location-plus'></i></span>
+                    <div class="address">
+                        <span class="text">Your store for 66204</span>
+                        <p class="loc">Kansas City <i class='arrow-down bx bxs-down-arrow'></i></p>
+                    </div>
+                </div>
+                <span class="favorite"><i class='bx bxs-heart'></i></span>
+                <span class="person"><i class='bx bxs-user'></i></span>
+            </div>
+        </header>
+        <section class="content">
+            <form class="formulario" id="form">
+                <h2 class="title">Get a real offer in minutes</h2>
+                <p class="text">Most cars qualify, some we'll ask to see in person.</p>
+                <div class="btns">
+                    <button id="btn-license" class="btn selected">LICENSE PLATE</button>
+                    <button id="btn-vin" class="btn">VIN</button>
+                </div>
+                <div class="vin-fields hidden" id="vin-fields">
+                    <label class="label-form" for="license">License plate number</label>
+                    <input class="input-form" name="license" id="license" type="text">
+                </div>
+                <div class="license-fields" id="license-fields">
+                    <label class="label-form" for="license">License plate number</label>
+                    <input class="input-form" name="license" id="license" type="text">
+                    <span class="invalid" id="invalid-license">Campo inválido</span>
+                    <label class="label-form" for="state">
+                        Where's your car registered?
+                    </label>
+                    <select class="input-form" name="state" id="state">
+                        <option selected disabled></option>
+                        <option value="ce">Ceará</option>
+                        <option value="ma" disabled>Maranhão</option>
+                        <option value="sp">São Paulo</option>
+                    </select>
+                    <span class="invalid" id="invalid-state">Campo inválido</span>
+                </div>
+                <label class="label-form" for="zip">What's your zip code?</label>
+                <input class="input-form" type="text" id="zip" name="zip">
+                <button id="btn-send" disabled class="btn-send">Get my offer</button>
+            </form>
+        </section>
+        <footer class="footer">
+
+        </footer>
+    </main>
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
